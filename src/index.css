@@ -1,0 +1,41 @@
+body {
+  background-color: black;
+}
+
+.app-container {
+  display: flex;            /*영화 목록이 가로로 표시*/
+  flex-wrap: wrap;          /*브라우저 너비에 맞게 열의 개수를 조절*/
+  justify-content: space-between;  /*전체 가운데 정렬*/
+}
+
+.movie-container {
+  width: 250px;
+  margin: 16px;
+  color: white;
+  background-color: rgba(48, 44, 44, 0.783);
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px gray;
+}
+
+.movie-container img {
+  width: 250px;
+  height: 400px;
+}
+
+.movie-info {
+  display: flex;                    /*제목과 평점이 가로로 표시*/
+  padding: 20px;                    /*movie-info 내 여백 설정*/
+  justify-content: space-between;   /*콘텐츠를 양쪽 맞춤*/
+  align-items: center;              /*세로로 가운데 정렬*/
+}
+
+.movie-info h4 {
+  margin: 0;
+  white-space: nowrap;      /*줄바꿈 없음*/
+  overflow: hidden;         /*내용이 영역을 벗어나면 자름*/
+  text-overflow: ellipsis;  /*잘린 부분을 ...으로 대체*/
+}
+
+.movie-info span {
+  margin-left: 3px;
+}
